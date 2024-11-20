@@ -15,6 +15,7 @@ import { UserModule } from './user/module/user.module';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         uri: configService.get<string>('MONGO_URI'),
+        ssl: true, // Ensure SSL is enabled
       }),
     }),
     UserModule,
