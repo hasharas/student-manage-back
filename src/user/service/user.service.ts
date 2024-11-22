@@ -30,6 +30,6 @@ export class UserService {
 
           private generateCustomId(): string {
             // custom ID generat
-            return `user-${Math.floor(Math.random() * 1000000)}`;
+            return `user-${Math.floor(Math.random() * 100)}`;
           }
 }
